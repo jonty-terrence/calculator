@@ -1,28 +1,43 @@
 // create a variable for the number being displayed
     // make it equal an empty string
+let displayString = '';
 
 // select the display section of the calculator using DOCUMENT.GETELEMENTBYID
     // assign this to a variable
+let display = document.getElementById('display');
 
 // create a variable for the previous result
     // assign it the boolean value FALSE
+let previousResult = false;
 
 // call the LISTEN function
-
+listenForButtonPress()
 
 // create a LISTEN function that listens for which button is pressed on the calculator
     // use DOCUMENT.ADDEVENTLISTENER to listen for clicks and select the value of the button pressed
-
+function listenForButtonPress() {
+    document.addEventListener('click', getButtonValue());
+}
 
 // create a function that returns the value of the button clicked
+function getButtonValue() {
     // create variable to store value of button clicked
+    let buttonValue = event.target.value;
     // write check that assesses whether the value is a number (IF statement)
+    if (buttonValue.isNan === false) {
         // run function NUMBER on the value if check passes
+        number(buttonValue);
+        return;
+    }
     // write statement that runs ALLCLEAR function if the button is AC
+    if (buttonValue === AC) {
+
+    }
     // write statement that runs CLEAR function if the button is CE
     // write statement that runs CALCULATE FUNCTION if the button is equals sign
     // write statement that runs STORENUMBER function if the value is none of the above
 
+}
 // create function for button values that are numbers
     // make function take the button values as its argument
         // create IF statement

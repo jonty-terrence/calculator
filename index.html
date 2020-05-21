@@ -4,31 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Calculator</title>
+  <title>Jonty's Calculator</title>
   <link href="main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
     <body>
         <div class="calculator-grid">
-                <input class="input" type ="text" id ="display" value ="0">
-            <button id="clear" class="span-two" value="AC">AC</button>
-            <button id="clear" class="button" value="CE">CE</button>
-            <button id="divide" class="button" value="+">÷</button>
-            <button id="one" class="button" value="1">1</button>
-            <button id="two" class="button" value="2">2</button>
-            <button id="three" class="button" value="3">3</button>
-            <button id="multiply" class="button" value="*">*</button>
-            <button id="four" class="button" value="4">4</button>
-            <button id="five" class="button" value="5">5</button>
-            <button id="six" class="button" value="6">6</button>
-            <button id="add" class="button" value="+">+</button>
-            <button id="seven" class="button" value="7">7</button>
-            <button id="eight" class="button" value="8">8</button>
-            <button id="nine" class="button" value="9">9</button>
-            <button id="subtract" class="button" value="-">-</button>
-            <button id="decimal" class="button" value=".">.</button>
-            <button id="zero" class="button" value="0">0</button>
-            <button id="equals" class="span-two" value="=">=</button>
+                <div class="input" type ="text" id ="display"></div>
+            <button id="clear" class="span-two" onclick="clicked('ac')">AC</button>
+            <button id="clear" class="button" onclick="clicked('ce')">CE</button>
+            <button id="divide" class="button" onclick="clicked('/')">÷</button>
+            <button id="one" class="button" onclick="clicked(1)">1</button>
+            <button id="two" class="button" onclick="clicked(2)">2</button>
+            <button id="three" class="button" onclick="clicked(3)">3</button>
+            <button id="multiply" class="button" onclick="clicked('*')">X</button>
+            <button id="four" class="button" onclick="clicked(5)">4</button>
+            <button id="five" class="button" onclick="clicked(5)">5</button>
+            <button id="six" class="button" onclick="clicked(6)">6</button>
+            <button id="add" class="button" onclick="clicked('+')">+</button>
+            <button id="seven" class="button" onclick="clicked(7)">7</button>
+            <button id="eight" class="button" onclick="clicked(8)">8</button>
+            <button id="nine" class="button" onclick="clicked(9)">9</button>
+            <button id="subtract" class="button" onclick="clicked('-')">-</button>
+            <button id="decimal" class="button" onclick="clicked('.')">.</button>
+            <button id="zero" class="button" onclick="clicked(0)">0</button>
+            <button id="equals" class="span-two" onclick="clicked('=')">=</button>
           </div>
           <script src="calculator.js"></script>
         </body>
